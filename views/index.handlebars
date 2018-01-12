@@ -1,0 +1,19 @@
+<div class='container'>
+    <div class='jumbotron' id='header-section'>
+        <div class='jumbotron-content'>
+            <h1>Technology is always moving forward.</h1>
+            <h4 class='jumbotron-content-subtitle'>Checkout the latest from Tech Crunch:</h4>
+        </div>
+    </div>
+    <div class='articles-section' id='articles'>
+        <div class='row'>
+            <div class='col l8 s12'>
+                <h1>Top headlines affecting technology today: </h1>
+                {{#each articles}}
+                    <h2>{{title}}</h2>
+                    <h3>{{url}}</h3>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</div>
