@@ -7,12 +7,29 @@
     </div>
     <div class='articles-section' id='articles'>
         <div class='row'>
-            <div class='col l8 s12'>
+            <div class='col l12 s12'>
                 <h1>Top headlines affecting technology today: </h1>
-                {{#each articles}}
-                    <h2>{{title}}</h2>
-                    <h3>{{url}}</h3>
-                {{/each}}
+                <div class='articles-flex grid'>
+                    {{#each articles}}
+                        <div class="card grid-item">
+                            <div class="card-content">
+                                <a href='{{url}}'><h5>{{title}}</h5></a>
+                                <p>{{byline}}</p>
+                                <p>{{date}}</p>
+                            </div>
+                            <div class="card-tabs">
+                                <ul class="tabs tabs-fixed-width">
+                                    <li class="tab"><a class='active' href="#test4">More...</a></li>
+                                    <li class="tab"><a href="#test6">Notes</a></li>
+                                </ul>
+                            </div>
+                            <div class="card-content grey lighten-4">
+                                <div id="test4">{{excerpt}}</div>
+                                <div id="test6">Some awesome notes</div>
+                            </div>
+                        </div>
+                    {{/each}}
+                </div>
             </div>
         </div>
     </div>
