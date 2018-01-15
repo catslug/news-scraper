@@ -27,6 +27,10 @@ a {
     width: 60px;
 }
 
+.btn {
+    background-color: #ee6c72;
+}
+
 .jumbotron {
     background-image: url('../images/computingdivision.jpg');
     background-position: center top;
@@ -55,6 +59,17 @@ a {
     font-size: 30px;
 }
 
+.page-title {
+    text-align: left;
+    font-size: 50px;
+    width: 85%;
+    margin-right: 7%;
+    margin-left: 8%;
+    margin-bottom: 50px;
+    padding-bottom: 15px;
+    border-bottom: 5px solid rgb(238,109,114);
+}
+
 .articles-section {
     padding-top: 100vh;
 }
@@ -63,18 +78,54 @@ a {
     display: block;
     width: 100%;
     margin: 0 8%;
-    /*flex-direction: row;*/
-    /*flex-wrap: wrap;*/
-    /*justify-content: center;*/
-    /*align-items: baseline;*/
-    /*align-content: flex-start;*/
-    /*flex-basis: auto;*/
 }
 
 .grid-item {
     width: 380px;
+    margin-bottom: 40px;
+    position: relative;
 }
 
-/*.card {*/
-    /*max-width: 20%;*/
-/*}*/
+.card {
+    background-color: #f7f7f7;
+}
+
+.card .card-content .card-title {
+    margin-bottom: 20px;
+}
+
+.card .card-reveal .card-title {
+    margin-bottom: 20px;
+}
+
+.card .card-content {
+    margin-bottom: 20px;
+}
+
+.chat-icon {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+
+.note-box {
+    background-color: rgb(238,109,114);
+    width: 100%;
+    padding: 0.5px;
+    padding-left: 15px;
+    border-radius: 25px;
+    margin-bottom: 8px;
+    color: #ffffff;
+    position: relative;
+}
+
+.trash-delete {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+}
+
+.fullscreen {
+    position: absolute;
+    right: 50px;
+}

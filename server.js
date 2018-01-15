@@ -8,7 +8,7 @@ const cheerio = require('cheerio')
 
 const db = require('./models')
 
-const PORT = 8081
+const PORT = 3000
 
 const app = express()
 
@@ -25,10 +25,9 @@ mongoose.connect('mongodb://localhost/news-scraper', {
 })
 
 app.get('/', function(req, res) {
-    db.Article.find({}).sort({_id: -1}).exec(function(err, data) {
+    db.Article.find({}).populate({path: 'note', select: 'body'}).sort({_id: -1}).exec(function(err, data) {
         if (err) console.log(err)
         else {
-            console.log('cool, I got some data', data)
             res.render('index', {layout: 'main.handlebars', articles: data})
         }
     })
@@ -48,8 +47,6 @@ app.get('/scrape', function(req, res) {
                 result.date = $(this).parent('div').children('div.byline').children('time').attr('datetime')
                 result.byline = $(this).parent('div').children('div.byline').children('a').text()
                 result.excerpt = $(this).parent('div').children('p.excerpt').text()
-
-                console.log(result)
 
                 db.Article
                     .create(result)
@@ -76,7 +73,7 @@ app.get('/articles', function(req, res) {
 app.get('/articles/:id', function(req, res) {
     db.Article
         .findOne({ _id: req.params.id })
-        .populate('notes')
+        .populate('note')
         .then(function(dbArticle) {
             res.json(dbArticle)
         })
@@ -88,7 +85,7 @@ app.get('/articles/:id', function(req, res) {
 app.post('/articles/:id', function(req, res) {
     db.Note.create(req.body)
         .then(function(dbNote) {
-            return db.Article.findOneAndUpdate({ _id: req.params.id }, { note: dbNote._id }, { new: true })
+            return db.Article.findOneAndUpdate({ _id: req.params.id }, { $push: {note: dbNote._id} }, { new: true })
         })
         .then(function(dbArticle) {
             res.json(dbArticle)

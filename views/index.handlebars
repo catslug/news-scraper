@@ -5,27 +5,28 @@
             <h4 class='jumbotron-content-subtitle'>Checkout the latest from Tech Crunch:</h4>
         </div>
     </div>
-    <div class='articles-section' id='articles'>
+    <div class='articles-section'>
         <div class='row'>
             <div class='col l12 s12'>
-                <h1>Top headlines affecting technology today: </h1>
+                <h1 id='articles' class='page-title'>Top headlines affecting technology today: </h1>
                 <div class='articles-flex grid'>
                     {{#each articles}}
                         <div class="card grid-item">
-                            <div class="card-content">
-                                <a href='{{url}}'><h5>{{title}}</h5></a>
+                            <div class="card-content activator">
+                                <a class='card-title' target='blank' href='{{url}}'><h5>{{title}}</h5></a><i class="material-icons right chat-icon">chat</i>
                                 <p>{{byline}}</p>
                                 <p>{{date}}</p>
+                                <p>{{excerpt}}</p>
                             </div>
-                            <div class="card-tabs">
-                                <ul class="tabs tabs-fixed-width">
-                                    <li class="tab"><a class='active' href="#test4">More...</a></li>
-                                    <li class="tab"><a href="#test6">Notes</a></li>
-                                </ul>
-                            </div>
-                            <div class="card-content grey lighten-4">
-                                <div id="test4">{{excerpt}}</div>
-                                <div id="test6">Some awesome notes</div>
+                            <div class="card-reveal">
+                                <span class='card-title'>Reader's comments:<i class="material-icons right fullscreen">fullscreen</i><i class="material-icons right">close</i></span>
+                                {{#each note}}
+                                    <div class='note-box'>
+                                        <p>{{body}}</p><a id='{{_id}}'><i class='material-icons right trash-delete'>delete_forever</i></a>
+                                    </div>
+                                {{/each}}
+                                <input placeholder='add a note' data-id={{_id}} type='text' class='note-input'>
+                                <a id={{_id}} class="waves-effect waves-light btn submit-note">submit</a>
                             </div>
                         </div>
                     {{/each}}
