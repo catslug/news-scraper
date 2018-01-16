@@ -102,6 +102,10 @@ a {
     margin-bottom: 20px;
 }
 
+.card .card-content .card-content-p {
+    margin-bottom: 10px;
+}
+
 .chat-icon {
     position: absolute;
     bottom: 15px;
@@ -109,23 +113,38 @@ a {
 }
 
 .note-box {
-    background-color: rgb(238,109,114);
     width: 100%;
-    padding: 0.5px;
-    padding-left: 15px;
-    border-radius: 25px;
     margin-bottom: 8px;
-    color: #ffffff;
     position: relative;
+    border-bottom: 1px solid #b0b0b0;
 }
 
 .trash-delete {
     position: absolute;
-    top: 12px;
-    right: 15px;
+    top: -6px;
+    right: 0;
 }
 
 .fullscreen {
     position: absolute;
     right: 50px;
+}
+
+.modal-section {
+    position: fixed;
+    width: 80%;
+    height: 80%;
+    margin: 10%;
+    top: 0;
+    left: 0;
+    display: none;
+    background-color: rgba(238,109,114,0.9);
+    overflow: scroll;
+    color: black;
+}
+
+.close-modal {
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }

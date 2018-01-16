@@ -15,6 +15,9 @@ const ArticleSchema = new Schema({
     date: {
         type: Date,
     },
+    byline: {
+        type: String,
+    },
     excerpt: {
         type: String,
     },
