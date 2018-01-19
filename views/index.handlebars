@@ -19,14 +19,17 @@
                                 <p class='card-content-p'>{{excerpt}}</p>
                             </div>
                             <div class="card-reveal">
-                                <span class='card-title'>Reader's comments:<i id={{_id}} class="material-icons right fullscreen">fullscreen</i><i class="material-icons right">close</i></span>
-                                {{#each note}}
-                                    <div class='note-box'>
-                                        <p>{{body}}</p><a id='{{_id}}'><i class='material-icons right trash-delete'>delete_forever</i></a>
-                                    </div>
-                                {{/each}}
-                                <input placeholder='add a note' data-id={{_id}} type='text' class='note-input'>
-                                <a id={{_id}} class="waves-effect waves-light btn submit-note">submit</a>
+                                <span class='card-title'>Reader's comments:<i data-value={{_id}} class="material-icons right fullscreen">fullscreen</i><i class="material-icons right">close</i></span>
+                                <input placeholder='add a note' id={{_id}} type='text' class='note-input'>
+                                <button data-id={{_id}} type='submit' class="waves-effect waves-light btn submit-note">submit</button>
+
+                                {{> articles/cardalter-block note=note }}
+
+                                <!--{{#each note}}-->
+                                    <!--<div class='note-box'>-->
+                                        <!--<p>{{body}}</p><a id='{{_id}}'><i class='material-icons right trash-delete'>delete_forever</i></a>-->
+                                    <!--</div>-->
+                                <!--{{/each}}-->
                             </div>
                         </div>
                     {{/each}}

@@ -7,25 +7,10 @@ $(document).ready(function() {
         gutter: 10,
     });
 
-    $('.submit-note').on('click', function() {
-        let newNote = {}
-
-        newNote.articleId = $(this).attr('id')
-        newNote.body = $('input').attr('data-id', newNote.articleId).val()
-
-        $.ajax({
-            type: 'POST',
-            url: `/articles/${newNote.articleId}`,
-            data: newNote
-        }).done(function(data) {
-            console.log('posted complete', data)
-        })
-    })
-
     $('.fullscreen').on('click', function() {
         console.log('clicked the expand button')
 
-        let articleId = $(this).attr('id')
+        let articleId = $(this).attr('data-value')
 
         console.log(articleId)
 
@@ -68,3 +53,26 @@ $(document).ready(function() {
 const closeModal = () => {
     $('.modal-section').css('display', 'none')
 }
+
+$(window).on('load', function() {
+    $('.submit-note').on('click', function() {
+
+        let newNote = {}
+
+        newNote.articleId = $(this).attr('data-id')
+
+        // console.log([newNote.articleId, $('input').attr('id'), $('input').attr('id', newNote.articleId).val(), $('input[id=' + newNote.articleId + ']').val()])
+
+        newNote.body = $('input[id=' + newNote.articleId + ']').val()
+        console.log(['newNote', newNote])
+
+        $.ajax({
+            type: 'POST',
+            url: `/articles/${newNote.articleId}`,
+            data: newNote
+        }).done(function(data) {
+            console.log('posted complete', data)
+            // window.location.replace('/')
+        })
+    })
+})

@@ -1,0 +1,18 @@
+{{#each articles}}
+    <div class="card grid-item">
+        <div class="card-content activator">
+            <a class='card-title' target='blank' href='{{url}}'><h5>{{title}}</h5></a><i class="material-icons right chat-icon">chat</i>
+            <p class='card-content-p'>{{byline}}</p>
+            <p class='card-content-p'>{{date}}</p>
+            <p class='card-content-p'>{{excerpt}}</p>
+        </div>
+        <div class="card-reveal">
+            <span class='card-title'>Reader's comments:<i id={{_id}} class="material-icons right fullscreen">fullscreen</i><i class="material-icons right">close</i></span>
+            <input placeholder='add a note' id={{_id}} type='text' class='note-input'>
+            <a data-id={{_id}} class="waves-effect waves-light btn submit-note">submit</a>
+
+            {{> @cardalter-block note={{note}} }}
+
+        </div>
+    </div>
+{{/each}}

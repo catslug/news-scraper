@@ -88,7 +88,7 @@ app.post('/articles/:id', function(req, res) {
             return db.Article.findOneAndUpdate({ _id: req.params.id }, { $push: {note: dbNote._id} }, { new: true })
         })
         .then(function(dbArticle) {
-            res.json(dbArticle)
+            res.redirect('/')
         })
         .catch(function(err) {
             console.log(err)
