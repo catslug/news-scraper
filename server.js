@@ -8,6 +8,8 @@ const cheerio = require('cheerio')
 
 const db = require('./models')
 
+const MONGODB_URI = process.env.MONGODB_URI || "mongodb://heroku_pdh52s64:vg6a1ijuuhfijdeopg5hsrkiv@ds041546.mlab.com:41546/heroku_pdh52s64"
+
 const PORT = 3000
 
 const app = express()
@@ -20,7 +22,7 @@ app.engine('handlebars', exphbs({ defaultLayout: 'main' }))
 app.set('view engine', 'handlebars')
 
 mongoose.Promise = Promise
-mongoose.connect('mongodb://localhost/news-scraper', {
+mongoose.connect(MONGODB_URI, {
     useMongoClient: true
 })
 

@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed73e990-0261-4c3c-be17-849dd7d32314" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/views/partials/articles/card-block.handlebars" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/views/partials/articles/cardalter-block.handlebars" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/models/Note.js" afterPath="$PROJECT_DIR$/models/Note.js" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/app.js" afterPath="$PROJECT_DIR$/public/assets/js/app.js" />
       <change beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
-      <change beforePath="$PROJECT_DIR$/views/index.handlebars" afterPath="$PROJECT_DIR$/views/index.handlebars" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="90" column="29" lean-forward="false" selection-start-line="90" selection-start-column="29" selection-end-line="90" selection-end-column="29" />
+            <state relative-caret-position="360">
+              <caret line="24" column="31" lean-forward="true" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -99,7 +94,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/assets/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="169">
@@ -141,9 +136,9 @@
         <option value="$PROJECT_DIR$/models/Note.js" />
         <option value="$PROJECT_DIR$/views/partials/articles/card-block.handlebars" />
         <option value="$PROJECT_DIR$/views/partials/articles/cardalter-block.handlebars" />
-        <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/views/index.handlebars" />
         <option value="$PROJECT_DIR$/public/assets/js/app.js" />
+        <option value="$PROJECT_DIR$/server.js" />
       </list>
     </option>
   </component>
@@ -267,12 +262,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1515547498947</updated>
-      <workItem from="1515547501860" duration="43412000" />
+      <workItem from="1515547501860" duration="43767000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43412000" />
+    <option name="totallyTimeSpent" value="43767000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="49" y="23" width="1391" height="837" extended-state="0" />
@@ -571,14 +566,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="90" column="29" lean-forward="false" selection-start-line="90" selection-start-column="29" selection-end-line="90" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/index.handlebars">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -600,6 +587,14 @@
             <marker date="1516397607289" expanded="true" signature="1242:1509" ph="..." />
             <marker date="1516397607289" expanded="true" signature="1550:1938" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="31" lean-forward="true" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
