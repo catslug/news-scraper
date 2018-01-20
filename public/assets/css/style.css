@@ -136,8 +136,9 @@ a {
 .modal-section {
     position: fixed;
     width: 80%;
-    height: 80%;
+    height: 85%;
     margin: 10%;
+    margin-top: 5%;
     padding: 50px;
     top: 0;
     left: 0;
@@ -145,6 +146,7 @@ a {
     background-color: rgba(238,109,114,1);
     overflow: scroll;
     color: black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
 .close-modal {
@@ -180,4 +182,5 @@ a {
 .modal-note {
     margin-left: 15px;
     position: absolute;
+    max-width: 60vw;
 }
