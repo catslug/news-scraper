@@ -53,10 +53,10 @@ app.get('/scrape', function(req, res) {
                 db.Article
                     .create(result)
                     .then(function(dbArticle) {
-                        res.send('Scrape Complete')
+                        res.redirect('/')
                     })
                     .catch(function(err) {
-                        res.json(err)
+                        res.redirect('/')
                     })
             })
         }

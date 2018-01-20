@@ -24,23 +24,27 @@ $(document).ready(function() {
             $('#modal-article-info').empty()
             $('#modal-notes').empty()
 
-            let title = article.title !== 'undefined' ? $('<p>').text(article.title) : $('<p>').text('No title')
-            let date = article.date !== 'undefined' ? $('<p>').text(article.date) : $('<p>').text('No date available')
-            let excerpt = article.excerpt !== 'undefined' ? $('<p>').text(article.excerpt) : $('<p>').text('')
-            let byline = article.byline !== 'undefined' ? $('<p>').text(article.byline) : $('<p>').text('By Unknown')
+            let title = article.title !== 'undefined' ? $('<p>').addClass('modal-title').text(article.title) : $('<p>').text('No title')
+            let date = article.date !== 'undefined' ? $('<p>').addClass('modal-date').text(article.date) : $('<p>').text('No date available')
+            let excerpt = article.excerpt !== 'undefined' ? $('<p>').addClass('modal-excerpt').text(article.excerpt) : $('<p>').text('')
+            let byline = article.byline !== 'undefined' ? $('<p>').addClass('modal-byline').text(article.byline) : $('<p>').text('By Unknown')
             let articleSection = $('<div>')
             let noteSection = $('<div>')
+            let noteSectionHeader = $('<p>').addClass('modal-note-header').text('Reader\'s Comments:')
 
             articleSection.prepend(excerpt).prepend(date).prepend(byline).prepend(title)
 
             for (let i = 0; i < article.note.length; i++) {
 
-                console.log(article.note)
+                let note = article.note[i].body !== 'undefined' ? $('<p>').addClass('modal-note').text(article.note[i].body) : $('<p>').text('Error retrieving this note.')
+                let icon = $('<i>').addClass('modal-note-icon material-icons').text('speaker_notes')
 
-                let note = article.note[i].body !== 'undefined' ? $('<p>').text(article.note[i].body) : $('<p>').text('Error retrieving this note.')
+                note.prepend(icon)
+
                 noteSection.prepend(note)
             }
 
+            $('#modal-notes').prepend(noteSectionHeader)
             $('#modal-article-info').append(articleSection)
             $('#modal-notes').append(noteSection)
         })
