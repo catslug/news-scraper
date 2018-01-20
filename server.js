@@ -10,7 +10,7 @@ const db = require('./models')
 
 const MONGODB_URI = process.env.MONGODB_URI || "mongodb://heroku_pdh52s64:vg6a1ijuuhfijdeopg5hsrkiv@ds041546.mlab.com:41546/heroku_pdh52s64"
 
-const PORT = 3000
+const PORT = process.env.PORT || 3000
 
 const app = express()
 
