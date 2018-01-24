@@ -124,8 +124,8 @@ a {
 
 .trash-delete {
     position: absolute;
-    top: -6px;
-    right: 0;
+    top: -4px;
+    right: -12px;
 }
 
 .fullscreen {
@@ -174,13 +174,21 @@ a {
 }
 
 .modal-note-icon {
-    position: absolute;
-    top: -20px;
-    left: -10px;
+    flex: 1;
+    flex-shrink: 1;
 }
 
 .modal-note {
+    flex: 6;
+    flex-grow: 9;
     margin-left: 15px;
-    position: absolute;
     max-width: 60vw;
+}
+
+.modal-flex {
+    /*flex: 1;*/
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: flex-start;
 }

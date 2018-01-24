@@ -38,10 +38,12 @@ $(document).ready(function() {
 
                 let note = article.note[i].body !== 'undefined' ? $('<p>').addClass('modal-note').text(article.note[i].body) : $('<p>').text('Error retrieving this note.')
                 let icon = $('<i>').addClass('modal-note-icon material-icons').text('speaker_notes')
+                let flexDiv = $('<div>').addClass('modal-flex')
 
-                note.prepend(icon)
+                flexDiv.prepend(note)
+                flexDiv.prepend(icon)
 
-                noteSection.prepend(note)
+                noteSection.prepend(flexDiv)
             }
 
             $('#modal-notes').prepend(noteSectionHeader)
