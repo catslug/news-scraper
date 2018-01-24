@@ -97,6 +97,12 @@ app.post('/articles/:id', function(req, res) {
         })
 })
 
+app.get('/notes/:id', function(req, res) {
+    db.Note.findByIdAndRemove(req.params.id, function(dbDeletedNote) {
+        res.sendStatus(200)
+    })
+})
+
 app.listen(PORT, function() {
     console.log(`App listening on port ${PORT}!`)
 })

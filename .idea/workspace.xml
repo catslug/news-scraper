@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed73e990-0261-4c3c-be17-849dd7d32314" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/style.css" afterPath="$PROJECT_DIR$/public/assets/css/style.css" />
       <change beforePath="$PROJECT_DIR$/public/assets/js/app.js" afterPath="$PROJECT_DIR$/public/assets/js/app.js" />
+      <change beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
+      <change beforePath="$PROJECT_DIR$/views/partials/articles/cardalter-block.handlebars" afterPath="$PROJECT_DIR$/views/partials/articles/cardalter-block.handlebars" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,8 +18,8 @@
       <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="58" column="40" lean-forward="false" selection-start-line="58" selection-start-column="40" selection-end-line="58" selection-end-column="40" />
+            <state relative-caret-position="568">
+              <caret line="101" column="27" lean-forward="true" selection-start-line="101" selection-start-column="27" selection-end-line="101" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -45,6 +45,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="cardalter-block.handlebars" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/partials/articles/cardalter-block.handlebars">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="37" lean-forward="false" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="main.handlebars" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/layouts/main.handlebars">
           <provider selected="true" editor-type-id="text-editor">
@@ -55,29 +65,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/assets/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="188" column="11" lean-forward="true" selection-start-line="188" selection-start-column="0" selection-end-line="189" selection-end-column="0" />
+            <state relative-caret-position="519">
+              <caret line="183" column="22" lean-forward="true" selection-start-line="183" selection-start-column="22" selection-end-line="183" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/assets/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="551">
-              <caret line="45" column="43" lean-forward="false" selection-start-line="45" selection-start-column="43" selection-end-line="45" selection-end-column="43" />
+            <state relative-caret-position="522">
+              <caret line="64" column="24" lean-forward="true" selection-start-line="64" selection-start-column="24" selection-end-line="64" selection-end-column="24" />
               <folding>
-                <marker date="1516756136742" expanded="true" signature="816:893" ph="..." />
-                <marker date="1516756136742" expanded="true" signature="949:1041" ph="..." />
-                <marker date="1516756136742" expanded="true" signature="1103:1176" ph="..." />
-                <marker date="1516756136742" expanded="true" signature="1236:1667" ph="..." />
-                <marker date="1516756136742" expanded="true" signature="1299:1667" ph="..." />
-                <marker date="1516756136742" expanded="true" signature="1340:1667" ph="..." />
-                <marker date="1516756136742" expanded="true" signature="1731:2422" ph="..." />
+                <marker date="1516758404581" expanded="true" signature="816:893" ph="..." />
+                <marker date="1516758404581" expanded="true" signature="949:1041" ph="..." />
+                <marker date="1516758404581" expanded="true" signature="1103:1176" ph="..." />
+                <marker date="1516758404581" expanded="true" signature="1236:1667" ph="..." />
+                <marker date="1516758404581" expanded="true" signature="1299:1667" ph="..." />
+                <marker date="1516758404581" expanded="true" signature="1340:1667" ph="..." />
+                <marker date="1516758404581" expanded="true" signature="1731:2817" ph="..." />
               </folding>
             </state>
           </provider>
@@ -107,12 +117,12 @@
         <option value="$PROJECT_DIR$/models/Article.js" />
         <option value="$PROJECT_DIR$/models/Note.js" />
         <option value="$PROJECT_DIR$/views/partials/articles/card-block.handlebars" />
-        <option value="$PROJECT_DIR$/views/partials/articles/cardalter-block.handlebars" />
         <option value="$PROJECT_DIR$/views/index.handlebars" />
-        <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/views/layouts/main.handlebars" />
-        <option value="$PROJECT_DIR$/public/assets/js/app.js" />
         <option value="$PROJECT_DIR$/public/assets/css/style.css" />
+        <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/views/partials/articles/cardalter-block.handlebars" />
+        <option value="$PROJECT_DIR$/public/assets/js/app.js" />
       </list>
     </option>
   </component>
@@ -178,14 +188,20 @@
             <path>
               <item name="news-scraper" type="b2602c69:ProjectViewProjectNode" />
               <item name="news-scraper" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="images" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="news-scraper" type="b2602c69:ProjectViewProjectNode" />
               <item name="news-scraper" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="partials" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="news-scraper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="news-scraper" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="partials" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="articles" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="news-scraper" type="b2602c69:ProjectViewProjectNode" />
@@ -195,6 +211,25 @@
               <item name="news-scraper" type="b2602c69:ProjectViewProjectNode" />
               <item name="18-mongo-mongoose" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="01-Activities" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="news-scraper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="18-mongo-mongoose" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="01-Activities" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="11-Scraping-into-a-db" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="news-scraper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="18-mongo-mongoose" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="01-Activities" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="12-Note-Taker" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="news-scraper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="18-mongo-mongoose" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="01-Activities" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="12-Note-Taker" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Unsolved" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="news-scraper" type="b2602c69:ProjectViewProjectNode" />
@@ -241,12 +276,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1515547498947</updated>
-      <workItem from="1515547501860" duration="48502000" />
+      <workItem from="1515547501860" duration="50128000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48502000" />
+    <option name="totallyTimeSpent" value="50128000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="49" y="23" width="1391" height="837" extended-state="0" />
@@ -348,14 +383,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../class-assignments/MongoDB/18-mongo-mongoose/01-Activities/12-Note-Taker/Unsolved/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-95">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -439,22 +466,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../class-assignments/MongoDB/18-mongo-mongoose/01-Activities/11-Scraping-into-a-db/Unsolved/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1082">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../class-assignments/MongoDB/scrape/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="89" column="12" lean-forward="false" selection-start-line="89" selection-start-column="12" selection-end-line="89" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/Article.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -495,26 +506,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/partials/articles/cardalter-block.handlebars">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="14" lean-forward="true" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/partials/articles/card-block.handlebars">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="10" lean-forward="true" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/Note.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="2" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
           <folding />
         </state>
       </provider>
@@ -527,18 +522,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
+    <entry file="file://$PROJECT_DIR$/public/assets/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="58" column="40" lean-forward="false" selection-start-line="58" selection-start-column="40" selection-end-line="58" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.handlebars">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="130" lean-forward="false" selection-start-line="21" selection-start-column="130" selection-end-line="21" selection-end-column="130" />
+        <state relative-caret-position="519">
+          <caret line="183" column="22" lean-forward="true" selection-start-line="183" selection-start-column="22" selection-end-line="183" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -551,27 +538,75 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/js/app.js">
+    <entry file="file://$PROJECT_DIR$/views/index.handlebars">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="45" column="43" lean-forward="false" selection-start-line="45" selection-start-column="43" selection-end-line="45" selection-end-column="43" />
-          <folding>
-            <marker date="1516756136742" expanded="true" signature="816:893" ph="..." />
-            <marker date="1516756136742" expanded="true" signature="949:1041" ph="..." />
-            <marker date="1516756136742" expanded="true" signature="1103:1176" ph="..." />
-            <marker date="1516756136742" expanded="true" signature="1236:1667" ph="..." />
-            <marker date="1516756136742" expanded="true" signature="1299:1667" ph="..." />
-            <marker date="1516756136742" expanded="true" signature="1340:1667" ph="..." />
-            <marker date="1516756136742" expanded="true" signature="1731:2422" ph="..." />
-          </folding>
+        <state relative-caret-position="315">
+          <caret line="21" column="130" lean-forward="false" selection-start-line="21" selection-start-column="130" selection-end-line="21" selection-end-column="130" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/css/style.css">
+    <entry file="file://$PROJECT_DIR$/models/Note.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="188" column="11" lean-forward="true" selection-start-line="188" selection-start-column="0" selection-end-line="189" selection-end-column="0" />
+        <state relative-caret-position="150">
+          <caret line="10" column="2" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../class-assignments/MongoDB/18-mongo-mongoose/01-Activities/11-Scraping-into-a-db/Unsolved/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-333">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../class-assignments/MongoDB/18-mongo-mongoose/01-Activities/12-Note-Taker/Unsolved/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-572">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../class-assignments/MongoDB/scrape/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1060">
+          <caret line="89" column="12" lean-forward="false" selection-start-line="89" selection-start-column="12" selection-end-line="89" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="568">
+          <caret line="101" column="27" lean-forward="true" selection-start-line="101" selection-start-column="27" selection-end-line="101" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/partials/articles/cardalter-block.handlebars">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="37" lean-forward="false" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="64" column="24" lean-forward="true" selection-start-line="64" selection-start-column="24" selection-end-line="64" selection-end-column="24" />
+          <folding>
+            <marker date="1516758404581" expanded="true" signature="816:893" ph="..." />
+            <marker date="1516758404581" expanded="true" signature="949:1041" ph="..." />
+            <marker date="1516758404581" expanded="true" signature="1103:1176" ph="..." />
+            <marker date="1516758404581" expanded="true" signature="1236:1667" ph="..." />
+            <marker date="1516758404581" expanded="true" signature="1299:1667" ph="..." />
+            <marker date="1516758404581" expanded="true" signature="1340:1667" ph="..." />
+            <marker date="1516758404581" expanded="true" signature="1731:2817" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

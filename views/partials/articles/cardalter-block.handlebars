@@ -1,5 +1,5 @@
 {{#each note}}
-    <div class='note-box'>
+    <div class='note-box' data-delete={{_id}}>
         <p>{{body}}</p><a id={{_id}}><i class='material-icons right trash-delete'>delete_forever</i></a>
     </div>
 {{/each}}

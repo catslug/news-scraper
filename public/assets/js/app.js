@@ -52,6 +52,20 @@ $(document).ready(function() {
         })
     })
 
+    $('.trash-delete').on('click', function() {
+        let noteId = $(this).closest('a').attr('id')
+        console.log(noteId)
+
+        $.ajax({
+            type: 'GET',
+            url: `/notes/${noteId}`
+        }).done(function(dbNote) {
+            $('.note-box').filter(function(){
+                return $(this).attr('data-delete') === noteId
+            }).remove();
+        })
+    })
+
     $('.close-modal').on('click', closeModal)
     $(window).on('click', closeModal)
 })
@@ -64,21 +78,18 @@ $(window).on('load', function() {
     $('.submit-note').on('click', function() {
 
         let newNote = {}
-
         newNote.articleId = $(this).attr('data-id')
 
-        // console.log([newNote.articleId, $('input').attr('id'), $('input').attr('id', newNote.articleId).val(), $('input[id=' + newNote.articleId + ']').val()])
-
         newNote.body = $('input[id=' + newNote.articleId + ']').val()
-        console.log(['newNote', newNote])
+
+        $('input[id=' + newNote.articleId + ']').val('')
 
         $.ajax({
             type: 'POST',
             url: `/articles/${newNote.articleId}`,
             data: newNote
         }).done(function(data) {
-            console.log('posted complete', data)
-            // window.location.replace('/')
+
         })
     })
 })
