@@ -87,10 +87,11 @@ app.get('/articles/:id', function(req, res) {
 app.post('/articles/:id', function(req, res) {
     db.Note.create(req.body)
         .then(function(dbNote) {
-            return db.Article.findOneAndUpdate({ _id: req.params.id }, { $push: {note: dbNote._id} }, { new: true })
+            db.Article.findOneAndUpdate({ _id: req.params.id }, { $push: {note: dbNote._id} }, { new: true })
+            return dbNote._id
         })
-        .then(function(dbArticle) {
-            res.redirect('/')
+        .then(function(dbNoteId) {
+            res.send(dbNoteId)
         })
         .catch(function(err) {
             console.log(err)

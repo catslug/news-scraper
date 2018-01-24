@@ -88,8 +88,16 @@ $(window).on('load', function() {
             type: 'POST',
             url: `/articles/${newNote.articleId}`,
             data: newNote
-        }).done(function(data) {
+        }).done(function(newNoteId) {
+            let noteBox = $('<div>').addClass("note-box").attr('data-delete', newNoteId)
+            let notePTag = $('<p>').text(newNote.body)
+            let noteATag = $('<a>').attr('id', newNoteId)
+            let noteIcon = $('<i>').addClass('material-icons right trash-delete').text('delete_forever')
 
+            noteATag.prepend(noteIcon)
+            notePTag.prepend(noteATag)
+            noteBox.prepend(notePTag)
+            $('.card-reveal').append(noteBox)
         })
     })
 })

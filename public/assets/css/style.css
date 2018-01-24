@@ -93,6 +93,10 @@ a {
     background-color: #f7f7f7;
 }
 
+.card .card-reveal {
+    z-index: 0;
+}
+
 .card .card-content .card-title {
     margin-bottom: 20px;
 }
